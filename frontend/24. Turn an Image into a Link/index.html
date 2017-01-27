@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Add Rounded Corners with a Border Radius</title>
+	<title>Turn an Image into a Link</title>
 	<style>
 	  .red-text {
 	    color: red;
@@ -22,7 +22,7 @@
 	    border-color: green;
 	    border-width: 10px;
 	    border-style: solid;
-	    border-radius: 10px;
+	    border-radius: 50%;
 	  }
 
 	  .smaller-image {
@@ -31,12 +31,17 @@
 	</style>
 </head>
 <body>
+	<!--
+		EXAMPLE:
+			<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera. "></a>
+	-->
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
 
 	<h2 class="red-text">CatPhotoApp</h2>
 
-	<img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. ">
+	<p>Click here for <a href="#">cat photos</a>.</p>
+
+	<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a><!-- the photo is now a link -->
 
 	<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
 	<p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
