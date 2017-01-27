@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Override Class Declarations by Styling ID Attributes</title>
+	<style>
+	  body {
+	    background-color: black;
+	    font-family: Monospace;
+	    color: green;
+	  }
+	  .pink-text {
+	    color: pink;
+	  }
+	  .blue-text {
+	    color: blue;
+	  }
+	  #orange-text {
+  		color: orange;
+	  }
+	</style>
+</head>
+<body>
+	<!-- the browser will use whichever CSS declaration came last -->
+	<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+</body>
+</html>
