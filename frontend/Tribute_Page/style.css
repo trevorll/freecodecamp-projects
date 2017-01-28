@@ -11,4 +11,10 @@ footer ul li{
 	background-color: black;
 }
 
-body { padding-top: 70px; }
+body { padding-top: 70px;  }
+
+#group-name{
+	font-family: Pacifico;
+	text-align: center;
+	size: 140px;
+}
