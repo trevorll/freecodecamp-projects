@@ -1,0 +1,14 @@
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li{
+	display: inline;
+	margin: 2%;
+}
+
+.navigationbar {
+	background-color: black;
+}
+
+body { padding-top: 70px; }
