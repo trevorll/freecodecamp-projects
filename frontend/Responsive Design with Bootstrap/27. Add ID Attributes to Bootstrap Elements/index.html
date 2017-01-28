@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>House our page within a Bootstrap Container Fluid Div</title>
+	<title>Add ID Attributes to Bootstrap Elements</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -21,8 +21,27 @@
 	</style>
 </head>
 <body>
-	<div class="container-fluid"> <!-- mobile-responsive -->
-		<h3 class="text-primary text-center">jQuery Playground</h3>
+	<!--
+		class well -> create a visal sense of depth for your columns
+	-->
+	<div class="container-fluid">
+	  <h3 class="text-primary text-center">jQuery Playground</h3>
+	  <div class="row">
+	    <div class="col-xs-6">
+	      <div id="left-well" class="well">
+	        <button class="btn btn-default target"></button>
+	        <button class="btn btn-default target"></button>
+	        <button class="btn btn-default target"></button>
+	      </div>
+	    </div>
+	    <div class="col-xs-6">
+	      <div id="right-well" class="well">
+	        <button class="btn btn-default target"></button>
+	        <button class="btn btn-default target"></button>
+	        <button class="btn btn-default target"></button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </body>
 </html>
