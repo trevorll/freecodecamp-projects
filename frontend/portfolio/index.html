@@ -4,8 +4,100 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Portfolio</title>
+	<!-- including bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--end including bootstrap -->
+	<!-- Customizing our CSS-->
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
 </head>
-<body>
-	<h1>Hello World</h1>
+<body style="background-color: #F5F5DC">
+	<!-- header starts -->
+	<header >
+		<nav class="navigationbar navbar navbar-default navbar-fixed-top" ><!-- default bootstrap navbar -->
+			<div class="navigationbar container-fluid"> <!-- full width container, spanning the entire width of your viewport -->
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navigationbar navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navigationbar navbar-brand" href="http://www.suitesoprano.es/">
+						<!--<img style="height:30px;" alt="Brand" src="img/logo_suite.png">-->
+      				</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav"> <!-- for a full-height and lightweight navigation (including support for dropdowns) -->
+						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+						<li><a class="scrollable" href="#about">About<span class="sr-only">(current)</span></a></li>
+						<li><a class="scrollable" href="#portfolio">Portfolio<span class="sr-only">(current)</span></a></li>
+						<li><a class="scrollable" href="#cv">CV<span class="sr-only">(current)</span></a></li>
+						<li><a class="scrollable" href="#contact">Contact<span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div><!-- ends collapse navbar-collapse -->
+			</div> <!-- ends container-fluid -->
+		</nav>
+	</header>
+	
+	<hr class="" id="about" style="margin-bottom:60px">
+	
+	<section class="container-fluid">
+		<img class="img-responsive center-block" style="height:300px;margin-top:50px" alt="Brand" src="img/jordi.jpg">
+        <h1 style="text-align:center;">Hello!</h1>
+        <p style="text-align:center;">My name is Jordi Felip, and I am a web developer.</p>
+	</section>
+
+	<hr class="" id="portfolio" style="margin-bottom:120px">
+	<section class="container-fluid">
+		<h1 class="text-center">My Portfolio</h1>
+		<div class="row">
+			 <div class="col-lg-4">
+				 <a href="http://codepen.io/jfz94/pen/NdweKd"><img src="/img/tribute_page.png" class="img-responsive" alt="tribute page" style="width:360px;height:275px;"></a>
+				 <p class="text-center">Tribute page to Suite Soprano.</p>
+			 </div>
+			 <div class="col-lg-4">
+			 	<a href="https://github.com/jfz94/NodeVideoclub"><img src="/img/node_videoclub.png" class="img-responsive" alt="videoclub node" style="width:360px;height:275px;"></a>
+			 	<p class="text-center">Videoclub page made in Node</p>
+			 </div>
+			 <div class="col-lg-4">
+			 	<a href="http://thescape.herokuapp.com/"><img src="/img/escape_room_project.png" class="img-responsive" alt="escape_room_project" style="width:360px;height:275px;"></a>
+			 	<p class="text-center">Escape Room project</p>
+			 </div>
+		</div>
+	</section>
+
+	<hr class="" id="cv" style="margin-bottom:140px">
+	
+	<section  class="container-fluid">
+		<h1 style="margin-bottom: 30px" class="text-center"> CV</h1>
+		<a style="float:left; margin-right:15px;" href=https://docs.google.com/document/d/1mTxmaxMMaWg91sKpE8ujyjfHKIBn4arvBVeTb3-PzM8/edit?usp=sharing"><img src="/img/cv.PNG" class="img-responsive" alt="cv" style="width:320px;height:375px;"></a>
+		<p class="text-justify">If you click on the image, you will be able to see my CV on detail.</p>
+		<p class="text-justify">My work experience is related with Salesforce, a CRM which provides an interface for case management and task management, and a system for automatically routing and escalating important events.</p>
+	</section>
+
+	<hr class="" id="cv" style="margin-bottom:30px">
+	
+	<section id="contact" class="container-fluid">
+		<h1 class="text-center">Contact</h1>
+		<p class="text-cente">Email: jordifelipzayas@gmail.com</p>
+	</section>
+
+	<!-- footer starts -->
+	<footer class="text-center container-fluid">
+		<br>
+		<img src="img/facebook-logo.png" alt="facebook logo" style="height:20px">
+		<img src="img/twitter-logo.png" alt="twitter logo" style="height:20px">
+		<img src="img/linkedin-logo.png" alt="linkedin logo" style="height:20px">
+		<img src="img/github-logo.png" alt="github logo" style="height:20px">
+		<h5> All Rights Reserved | Jordi Felip </h5>
+	</footer>
+	<!-- footer ends -->
 </body>
 </html>
